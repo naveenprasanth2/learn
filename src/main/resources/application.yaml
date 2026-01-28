@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: learn
+server:
+  port: 8081
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics,my-check" # List specific endpoints
+        exclude: "env"                 # Exclude sensitive ones
+  endpoint:
+    health:
+      show-details: always             # Show full health details
