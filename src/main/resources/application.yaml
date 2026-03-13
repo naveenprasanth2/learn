@@ -1,6 +1,13 @@
 spring:
   application:
     name: learn
+  datasource:
+    url: jdbc:mysql://localhost:3306/company
+    username: root
+    password: rootroot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
 server:
   port: 8081
 management:
